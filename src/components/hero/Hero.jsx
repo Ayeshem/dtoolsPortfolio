@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const textVariants = {
   initial: {
@@ -31,7 +32,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -49,12 +50,14 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>DTOOLS INCORPORATION</motion.h2>
           <motion.h1 variants={textVariants}>
-          Comprehensive IT Solutions and Digital Marketing Services
+            Comprehensive IT Solutions and Digital Marketing Services
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
+            <Link to="/portfolio">
+              <motion.button variants={textVariants}>
+                See the Latest Works
+              </motion.button>
+            </Link>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img
