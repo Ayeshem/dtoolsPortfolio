@@ -49,7 +49,7 @@ const Services = () => {
           </h1>
         </div>
         <div className="title">
-          <h1>
+          <h1>  
             <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Digital Success.
           </h1>
           <button>WHAT WE DO?</button>

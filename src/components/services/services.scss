@@ -58,8 +58,8 @@
       }
 
       img {
-        width: 250px;
-        height: 85px;
+        width: 200px;
+        height: 75px;
         border-radius: 50px;
         object-fit: cover;
 
@@ -70,7 +70,7 @@
       }
 
       h1 {
-        font-size: 66px;
+        font-size: 50px;
         font-weight: 100;
 
         @include mobile {
@@ -79,8 +79,8 @@
       }
 
       button {
-        width: 250px;
-        height: 85px;
+        width: 200px;
+        height: 75px;
         border-radius: 50px;
         background-color: orange;
         border: none;
@@ -127,7 +127,7 @@
       }
 
       button {
-        padding: 10px;
+        padding: 8px;
         background-color: orange;
         border: none;
         cursor: pointer;
