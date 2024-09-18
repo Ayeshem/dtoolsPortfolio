@@ -29,8 +29,6 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={"animate"}
     >
@@ -63,9 +61,14 @@ const Services = () => {
           <h2>IT Solutions</h2>
           <p>
           We offer comprehensive IT solutions, including software development, system integration, and technology consulting. Our services are designed to optimize and streamline business operations, helping you achieve greater efficiency and effectiveness.
-
           </p>
-          <button>Go</button>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
         </motion.div>
         <motion.div
           className="box"
@@ -74,9 +77,14 @@ const Services = () => {
           <h2>Digital Marketing</h2>
           <p>
           Our digital marketing services encompass SEO, social media marketing, content creation, and online advertising. We craft and implement strategies to enhance your brand's online presence, drive traffic, and engage your target audience.
-
           </p>
-          <button>Go</button>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
         </motion.div>
         <motion.div
           className="box"
@@ -85,9 +93,14 @@ const Services = () => {
           <h2>Artificial Intelligence</h2>
           <p>
           We develop advanced AI systems that provide data analysis, predictive modeling, and process automation. Our AI solutions are designed to drive innovation, improve decision-making, and automate complex processes for your business.
-
           </p>
-          <button>Go</button>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
         </motion.div>
         <motion.div
           className="box"
@@ -96,20 +109,30 @@ const Services = () => {
           <h2>Game Development</h2>
           <p>
           Our team specializes in designing and developing interactive gaming experiences. We create engaging gameplay and vibrant graphics for various platforms, ensuring immersive and enjoyable experiences for players.
-
           </p>
-          <button>Go</button>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
-        >  
+        >
           <h2>Web Development</h2>
           <p>
           We create responsive, high-performance websites tailored to your business needs. Our focus is on delivering an exceptional user experience with optimized performance and design.
-
           </p>
-          <button>Go</button>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>
