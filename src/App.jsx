@@ -1,3 +1,4 @@
+// complete app
 import Test from "./Test";
 import "./app.scss";
 import Contact from "./components/contact/Contact";
@@ -36,3 +37,4 @@ const App = () => {
 };
 
 export default App;
+
