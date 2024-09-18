@@ -21,9 +21,32 @@
       margin-left: 100px; // Adjust this value as needed to move text to the right
       font-size: 1.25rem; // Adjust the font size as needed
 
-
       @include mobile {
         display: none;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+      margin-right: 90px; // Adjust as needed to position links correctly
+
+      a {
+        text-decoration: none;
+        color: #ffffff; // Change to your preferred color
+        font-size: 1.1rem; // Adjust as needed
+        font-weight: bold;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+          color: #639bd6; // Change to your hover color
+          transform: scale(1.1);
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
       }
     }
 
