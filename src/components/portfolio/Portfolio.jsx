@@ -75,7 +75,7 @@ const Portfolio = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "start start"],
+    offset: ["end end + 1", "start start"],
   });
 
   const scaleX = useSpring(scrollYProgress, {
