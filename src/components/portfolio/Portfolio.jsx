@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Navbar from "../navbar/Navbar";  // Import the Navbar component
+
 
 const items = [
   {
