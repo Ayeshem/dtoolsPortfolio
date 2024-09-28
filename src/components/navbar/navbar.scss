@@ -2,6 +2,7 @@
 
 .navbar {
   height: 100px;
+  background-color: #0c0c1d; // Adjust navbar background color if needed
 
   .wrapper {
     max-width: 1366px;
@@ -10,19 +11,33 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    padding: 0 25px; // Padding for wider screens
 
     @include mobile {
       justify-content: flex-end;
       padding: 20px;
     }
 
-    span {
-      font-weight: bold;
-      margin-left: 100px; // Adjust this value as needed to move text to the right
-      font-size: 1.5rem; // Adjust the font size as needed
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px; // Space between logo and text
 
-      @include mobile {
-        display: none;
+      img.logo {
+        width: 40px; // Adjust logo size
+        height: auto;
+      }
+
+      span {
+        font-weight: bold;
+        margin-left: 10px; // Adjust spacing between logo and text
+        font-size: 1.5rem; // Adjust font size
+
+        color: white; // Text color for the brand title
+
+        @include mobile {
+          display: none; // Hide title on mobile if needed
+        }
       }
     }
 
@@ -30,23 +45,27 @@
       display: flex;
       gap: 20px;
       margin-left: auto;
-      margin-right: 90px; // Adjust as needed to position links correctly
+      margin-right: 90px; // Adjust positioning for links if necessary
 
       a {
         text-decoration: none;
-        color: #ffffff; // Change to your preferred color
-        font-size: 1.1rem; // Adjust as needed
+        color: #ffffff; // Link color
+        font-size: 1.1rem; // Adjust font size
         font-weight: bold;
         transition: color 0.3s, transform 0.3s;
 
         &:hover {
-          color: #639bd6; // Change to your hover color
+          color: #639bd6; // Hover effect color
           transform: scale(1.1);
         }
 
         &:active {
           transform: scale(0.95);
         }
+      }
+
+      @include mobile {
+        margin-right: 20px; // Adjust link spacing on mobile
       }
     }
 
