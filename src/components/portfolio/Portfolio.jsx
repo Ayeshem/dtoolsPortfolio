@@ -36,7 +36,7 @@ const items = [
   {
     id: 6,
     title: "Chatbot Development for Customer Support",
-    img: "https://img.freepik.com/free-vector/hand-holding-phone-with-conversation-girl-chat-bot-mobile-app-talking-robot-online-flat-vector-illustration-technology-assistance-concept-banner-website-design-landing-page_74855-24649.jpg?uid=R156374610&ga=GA1.1.1398468410.1734755238&semt=ais_hybrid",
+    img: "https://img.freepik.com/free-vector/business-people-communicate-with-chatbot-application-chatbot-artificial-intelligence-talkbots-service-interactive-agent-support-concept-bright-vibrant-violet-isolated-illustration_335657-406.jpg?uid=R156374610&ga=GA1.1.1398468410.1734755238&semt=ais_hybrid",
     desc: "Created an intelligent chatbot using natural language processing and machine learning to handle customer inquiries, provide support, and assist with troubleshooting. The chatbot is designed to improve customer service efficiency.",
   },
   {
