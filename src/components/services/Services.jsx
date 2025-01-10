@@ -74,22 +74,6 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Digital Marketing</h2>
-          <p>
-          Our digital marketing services encompass SEO, social media marketing, content creation, and online advertising. We craft and implement strategies to enhance your brand's online presence, drive traffic, and engage your target audience.
-          </p>
-          <a
-            href="https://github.com/fawazdar2196"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button style={{ width: "100%" }}>Go</button>
-          </a>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
           <h2>Artificial Intelligence</h2>
           <p>
           We develop advanced AI systems that provide data analysis, predictive modeling, and process automation. Our AI solutions are designed to drive innovation, improve decision-making, and automate complex processes for your business.
@@ -122,9 +106,41 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Web Development</h2>
+          <h2>Machine Learning Models</h2>
           <p>
-          We create responsive, high-performance websites tailored to your business needs. Our focus is on delivering an exceptional user experience with optimized performance and design.
+          We design and implement machine learning models tailored to your needs, enabling predictive analytics, data-driven insights, and intelligent automation to empower your business decisions.
+          </p>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>AI Chatbots</h2>
+          <p>
+          Our AI chatbots are designed to enhance customer engagement, streamline communication, and provide instant support. They are fully customizable and integrate seamlessly with your platforms.
+          </p>
+          <a
+            href="https://github.com/fawazdar2196"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button style={{ width: "100%" }}>Go</button>
+          </a>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: "lightgray", color: "black" }}
+        >
+          <h2>Live Dashboards Development</h2>
+          <p>
+          We specialize in creating live dashboards that provide real-time data visualization and insights, empowering you to monitor and make informed decisions effectively.
           </p>
           <a
             href="https://github.com/fawazdar2196"
