@@ -1,8 +1,6 @@
-import { useRef } from "react";
+import React from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Navbar from "../navbar/Navbar";  // Import the Navbar component
-
+import Navbar from "../navbar/Navbar"; // Import the Navbar component
 
 const items = [
   {
@@ -41,57 +39,55 @@ const items = [
     img: "https://nordvpn.com/wp-content/uploads/blog-featured-what-is-chatbot.svg",
     desc: "Created an intelligent chatbot using natural language processing and machine learning to handle customer inquiries, provide support, and assist with troubleshooting. The chatbot is designed to improve customer service efficiency.",
   },
+  {
+    id: 7,
+    title: "Machine Learning Models for Predictive Analysis",
+    img: "https://img.freepik.com/free-vector/data-analyst-oversees-governs-income-expenses-with-magnifier-financial-management-system-finance-software-it-management-tool-concept_335657-1891.jpg?uid=R156374610&ga=GA1.1.1398468410.1734755238&semt=ais_hybrid",
+    desc: "Developed various machine learning models for predictive analysis in fields like finance, healthcare, and marketing. These models use historical data to predict trends and outcomes, assisting businesses in making data-driven decisions.",
+  },
+  {
+    id: 8,
+    title: "Anomaly Detection in Network Traffic",
+    img: "https://img.freepik.com/free-photo/blurred-traffic-light-trails-road_1359-716.jpg?semt=ais_hybrid",
+    desc: "Built an anomaly detection system that uses machine learning algorithms to detect unusual patterns in network traffic. This system is designed to improve network security by identifying potential threats like cyberattacks and unauthorized access.",
+  },
+  {
+    id: 9,
+    title: "AI Chatbot for Mental Health Support",
+    img: "https://bloggingwithsubi.com/wp-content/uploads/2024/04/dallc2b7e-2024-04-21-18.58.12-an-illustration-representing-generative-ai-in-mental-health-therapy.-the-image-should-depict-a-human-brain-with-digital-connections-to-signify-ai.-in-.webp",
+    desc: "Developed an AI-powered chatbot that provides mental health support by offering therapeutic conversations and guidance. The chatbot leverages NLP to understand and respond empathetically to users' concerns.",
+  },
+  {
+    id: 10,
+    title: "Email Analysis Chatbot",
+    img: "https://img.freepik.com/free-vector/chatbot-services-flat-composition-with-man-talking-cute-robot-laptop-screen-vector-illustration_98292-8714.jpg?uid=R156374610&ga=GA1.1.1398468410.1734755238&semt=ais_hybrid",
+    desc: "Created a chatbot that analyzes and processes emails using NLP techniques. It helps users manage their inbox by categorizing and prioritizing emails, as well as generating automated responses based on the content.",
+  },
+  {
+    id: 11,
+    title: "College Selection Machine Learning Model",
+    img: "https://img.freepik.com/free-vector/online-certification-illustrated-concept_23-2148570824.jpg?t=st=1736492038~exp=1736495638~hmac=b541ed3bcd43f8ec585ede6c310e630a30d6dec44e98d285c2c9a262c931f005&w=740",
+    desc: "Developed a machine learning model to help students select the right college based on various factors such as location, cost, course offerings, and personal preferences. The model predicts the best fit based on user input and data analysis.",
+  },
 ];
 
-
-const Single = ({ item }) => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-
-  return (
-    <section >
-      <div className="container">
-        <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
-          </div>
-          <motion.div className="textContainer" style={{y}}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const Portfolio = () => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end + 1", "start start"],
-  });
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-  });
-
   return (
-    <div className="portfolio" ref={ref}>
-      <div className="progress">
-        <h1>Featured Works</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+    <div className="portfolio">
+      <div className="portfolio-header">
+        <h1>Featured Projects</h1>
       </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+      <div className="portfolio-container">
+        {items.map((item) => (
+          <div className="portfolio-card" key={item.id}>
+            <img src={item.img} alt={item.title} />
+            <div className="portfolio-content">
+              <h2>{item.title}</h2>
+              <p>{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
